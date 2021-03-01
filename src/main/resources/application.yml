@@ -1,0 +1,18 @@
+# Version
+info:
+  app:
+    version: '@project.version@'
+
+# Database
+spring:
+  datasource:
+    url: jdbc:h2:mem:api
+    driverClassName: org.h2.Driver
+    username: woman-dextra
+    password:
+  h2:
+    console:
+      enabled: true
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+    ddl-auto: create
